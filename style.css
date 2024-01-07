@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:cursive;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body{
+  background: linear-gradient(130deg, rgb(143, 12, 12), rgb(9, 9, 160)) no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  width: 600px;
+  height: 150px;
+  position: relative;
+}
+
+.clock{
+  background-color: rgba(38, 0, 255, 0);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 5px white;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+p{
+  font-size: 60px;
+  color: white;
+}
+
+.clock label{
+  text-align: center;
+  color: white;
+}
+
+.for{
+  background-color: rgb(255, 46, 81);
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 10px;
+  top: -10px;
+  left: -40px;
+  z-index: 0;
+  box-shadow: 0px 0px 6px -1px white;
+}
+
+.serc{
+  background-color: rgb(6, 177, 207);
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -10px;
+  right: -30px;
+  box-shadow: 0px 0px 6px white;
+  z-index: 0;
+}
+
+.tri{
+  background-color: rgb(251, 255, 0);
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 1px 1px 100% 1px ;
+  bottom: -40px;
+  left: 200px;
+  box-shadow: 0px 0px 6px white;
+  z-index: 0;
+  animation: anim 9s infinite ease-in-out;
+}
+
+@keyframes anim{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+h1{
+  color: white;
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+#D{
+  font-size: 20px;
+  margin-right: -70px;
+  padding: 10px;
+}
+
+h2{
+  margin-bottom: -37px;
+  margin-right: 30px;
+}
